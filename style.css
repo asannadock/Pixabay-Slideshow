@@ -1,0 +1,110 @@
+#slideshow {
+    max-width: 1200px;
+    position: relative;
+    margin: 1em;
+}
+
+#slideshow .carousel-item {
+    display: none;
+}
+
+#slideshow .carousel-item-visible {
+    display: block;
+    -webkit-animation: fadeVisibility 1s; /* Safari 4+ */
+    -moz-animation:    fadeVisibility 1s; /* Fx 5+ */
+    -o-animation:      fadeVisibility 1s; /* Opera 12+ */
+    animation:         fadeVisibility 1s; /* IE 10+, Fx 29+ */
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+#slideshow .carousel-actions {
+    width: 100%;
+}
+
+.carousel-actions button {
+    width: 20%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    position: absolute;
+    top: 0;
+    background: transparent;
+    outline: none;
+    opacity: 0;
+    transition: opacity .3s linear;
+}
+#slideshow:hover button {
+    opacity: .6;
+}
+#slideshow:hover button:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.carousel-actions button.previous {
+    left: 0;
+}
+.carousel-actions button.next {
+    right: 0;
+}
+.carousel-actions button::before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    border-width: 0.3em;
+    border-color: rgba(180,180,180,.75);
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    position: absolute;
+}
+.carousel-actions button.previous::before {
+    transform: rotate(135deg);
+    transform-origin: top left;
+    left: 35%;
+}
+.carousel-actions button.next::before {
+    transform: rotate(-45deg);
+    transform-origin: top left;
+    left: 65%;
+}
+
+
+/* Makeing smooth transition when sliding. The second part of the @keyframe, that is 'animation', was set above under the class .carousel-item-visible */
+
+@-webkit-keyframes fadeVisibility {
+    0%   { opacity: .4; }
+    50%  { opacity: .8; }
+    100% { opacity: 1; }
+  }
+  @-moz-keyframes fadeVisibility {
+    0%   { opacity: .4; }
+    50%  { opacity: .8; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes fadeVisibility {
+    0%   { opacity: .4; }
+    50%  { opacity: .8; }
+    100% { opacity: 1; }
+  }
+  @keyframes fadeVisibility {
+    0%   { opacity: .4; }
+    50%  { opacity: .8; }
+    100% { opacity: 1; }
+  }
+
+/* END @keyframe */
+
+/* Slideshow */
+#slideshow {
+    max-width: 1200px;
+}
+
+#slideshow img {
+    width: 100%;
+    max-width: 1200px;
+}
