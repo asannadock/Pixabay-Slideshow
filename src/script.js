@@ -1,12 +1,16 @@
+import { type } from 'os'
+import 'regenerator-runtime/runtime'
+import './style.css'
+
 // Getting Images from pixabay
-const pixabay_API = "https://pixabay.com/api/?key=API_key=wildfire"
+const api_key = process.env.API_KEY
+const pixabay_API = `https://pixabay.com/api/?key=${api_key}&q=wildfire`
 
 async function getImages() {
    const imagesPromise = await fetch( pixabay_API )
 
    if( imagesPromise.ok ) {
       const images = await imagesPromise.json()
-console.log(images)
       let slideshowWrapper = document.getElementById('slideshow')
       images.hits.forEach( hit => {
          // Creating image wrapper and setting class to it
