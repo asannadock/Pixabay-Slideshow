@@ -16,7 +16,7 @@ The Pixabay API key is hidden with the help of:
  - run `npm install` to install all dependencies
  - in the copied repo's folder rename the file `.env_sample` to the `.env` and add your pixabay API key instead of the YOUR_API_KEY_HERE
  - run `npm run serve` to make the project open on your localhost.
-For the localhost 8001 post is being used - http://localhost:8001/.
+For the localhost 8001 port is being used - http://localhost:8001/.
 
 
 ## Features to be added
