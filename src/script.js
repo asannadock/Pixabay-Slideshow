@@ -17,9 +17,10 @@ async function getImages() {
          const imageWrapperElement = document.createElement('div')
          imageWrapperElement.classList.add('carousel-item')   
 
-         // Creating image element and adding src attribute to it
+         // Creating image element and adding src and alt attributes to it
          const imgElement = document.createElement('img')
          imgElement.src = hit.largeImageURL
+         imgElement.alt = hit.tags
 
          // Appending image wrapper and image element to the slideshow
          slideshowWrapper.prepend(imageWrapperElement)
