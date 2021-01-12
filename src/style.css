@@ -1,13 +1,13 @@
+/* Slideshow layout and elements */
 #slideshow {
     max-width: 1200px;
     position: relative;
-    margin: 1em;
+    margin: auto;
 }
-
 #slideshow .carousel-item {
     display: none;
+    position: relative;
 }
-
 #slideshow .carousel-item-visible {
     display: block;
     -webkit-animation: fadeVisibility 1s; /* Safari 4+ */
@@ -15,17 +15,32 @@
     -o-animation:      fadeVisibility 1s; /* Opera 12+ */
     animation:         fadeVisibility 1s; /* IE 10+, Fx 29+ */
 }
-
-.carousel .carousel-item img {
+#slideshow img {
     width: 100%;
-    max-width: 600px;
-    height: auto;
+    max-width: 1200px;
+}
+#slideshow .caption {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 4px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: lighter;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
 }
 
+/* Slideshow controls */
 #slideshow .carousel-actions {
     width: 100%;
 }
-
 .carousel-actions button {
     width: 20%;
     height: 100%;
@@ -75,7 +90,6 @@
 
 
 /* Makeing smooth transition when sliding. The second part of the @keyframe, that is 'animation', was set above under the class .carousel-item-visible */
-
 @-webkit-keyframes fadeVisibility {
     0%   { opacity: .4; }
     50%  { opacity: .8; }
@@ -98,13 +112,3 @@
   }
 
 /* END @keyframe */
-
-/* Slideshow */
-#slideshow {
-    max-width: 1200px;
-}
-
-#slideshow img {
-    width: 100%;
-    max-width: 1200px;
-}

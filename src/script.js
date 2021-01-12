@@ -22,9 +22,17 @@ async function getImages() {
          imgElement.src = hit.largeImageURL
          imgElement.alt = hit.tags
 
+         // Adding slideshow caption
+         const captionElement = document.createElement('div')
+         captionElement.classList.add('caption')
+         captionElement.innerHTML = `
+            <span>pixabay @ ${hit.user}</span>
+            <span>${hit.tags}</span>
+         `
+
          // Appending image wrapper and image element to the slideshow
          slideshowWrapper.prepend(imageWrapperElement)
-         imageWrapperElement.appendChild(imgElement)
+         imageWrapperElement.append(imgElement,captionElement)
       })
       // Making the fist retrieved image visible, since all images are hidden in css
       slideshowWrapper.firstChild.classList.add('carousel-item-visible')
