@@ -26,7 +26,7 @@ async function getImages() {
          const captionElement = document.createElement('div')
          captionElement.classList.add('caption')
          captionElement.innerHTML = `
-            <span>pixabay @ ${hit.user}</span>
+            <span>pixabay @${hit.user}</span>
             <span>${hit.tags}</span>
          `
 

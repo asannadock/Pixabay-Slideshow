@@ -1,8 +1,15 @@
 /* Slideshow layout and elements */
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
 #slideshow {
-    max-width: 1200px;
-    position: relative;
-    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #slideshow .carousel-item {
     display: none;
