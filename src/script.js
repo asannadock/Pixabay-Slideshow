@@ -27,8 +27,7 @@ async function getImages() {
          captionElement.classList.add('caption')
          captionElement.innerHTML = `
             <span>pixabay @${hit.user}</span>
-            <span>${hit.tags}</span>
-         `
+            <span>${hit.tags}</span>`
 
          // Appending image wrapper and image element to the slideshow
          slideshowWrapper.prepend(imageWrapperElement)
@@ -57,6 +56,15 @@ function carousel() {
 
    prevBtn.addEventListener('click', moveToPrevSlide)
    nextBtn.addEventListener('click', moveToNextSlide)
+   window.addEventListener('keyup', e => {
+      if ( e.keyCode === 37 ) {
+         moveToPrevSlide();
+         return false
+     } else if ( e.keyCode === 39 ) {
+         moveToNextSlide ();
+         return false
+     }
+   })
 
    // Show previous slide
    function moveToPrevSlide() {
@@ -75,7 +83,7 @@ function carousel() {
    function moveToNextSlide() {
       slides[slidePosition].classList.remove('carousel-item-visible')
 
-      if( slidePosition === totalSlides - 1 ) {
+      if ( slidePosition === totalSlides - 1 ) {
          slidePosition = 0
       } else {
          slidePosition++
@@ -86,9 +94,9 @@ function carousel() {
 }
 // Feature suggestions
 // 1. Automated slide transitions
-// 2. Add text to the slides
+// 2. Add text to the slides +
 // 3. Show the user which slide they're on (dots under the slides)
 // 4. Hiding slideshow arrows on first and last slides
-// 5. Adding key listeners to sliding (left and right arrow keys)
+// 5. Adding key listeners to sliding (left and right arrow keys) +
 
 // END Image Carousel
