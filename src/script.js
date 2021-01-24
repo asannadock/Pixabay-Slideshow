@@ -48,12 +48,18 @@ getImages()
 // Image Carousel
 function carousel() {
    const slides = document.querySelectorAll('.carousel-item')
-   const prevBtn = document.getElementById('carousel-button-prev')
-   const nextBtn = document.getElementById('carousel-button-next')
+   const prevBtn = document.querySelector('.carousel-actions .previous')
+   const nextBtn = document.querySelector('.carousel-actions .next')
 
    let slidePosition = 0
    const totalSlides = slides.length
 
+   // Automate slide transition
+   setInterval(() => { 
+      moveToNextSlide() 
+   }, 4000)
+   
+   // Add click eventlistener to the next and prev buttons as well as keylistener to slide images
    prevBtn.addEventListener('click', moveToPrevSlide)
    nextBtn.addEventListener('click', moveToNextSlide)
    window.addEventListener('keyup', e => {
