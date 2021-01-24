@@ -2,7 +2,7 @@
 
 
 This slideshow pulls images with keywork 'wildfire' from Pixabay API.
-This is a JavaScript, HTML and CSS project.
+This is HTML, CSS and JavaScript project.
 
 The Pixabay API key is hidden with the help of:
  - Node.js
