@@ -8,6 +8,14 @@ The Pixabay API key is hidden with the help of:
  - Node.js
  - Webpack
  - Dotevn Webpack
+
+## Challenges
+
+ - create a carousel with JavaScript
+ - practice some css animation (transition, fading, keyframes)
+ - integrate external API
+ - hide Pixabay API key
+ - use node.js and webpacks
  
 ## Setup
 
