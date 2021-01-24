@@ -21,9 +21,10 @@ For the localhost 8001 port is being used - http://localhost:8001/.
 
 ## Features to be added
 
- - automated slide transitions
- - adding text to the slides
- - showing the user which slide they're on (dots under the slides)
+ - ~~adding text to the slides~~
+ - ~~adding key listeners to sliding (left and right arrow keys)~~
+ - ~~automated slide transitions~~
+ - adding pause button
  - hiding slideshow arrows on first and last slides
- - adding key listeners to sliding (left and right arrow keys)
+
 
