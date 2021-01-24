@@ -1,4 +1,4 @@
-# Slideshow of images pulled from pixabay.com with the keyword 'wildfire'
+# JavaScript Automatic/Manual Slideshow
 
 
 This slideshow pulls images with keywork 'wildfire' from Pixabay API.
