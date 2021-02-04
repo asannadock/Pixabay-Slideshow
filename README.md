@@ -31,5 +31,6 @@ For the localhost 8001 port is being used - http://localhost:8001/.
  - ~~automated slide transitions~~
  - adding pause button
  - hiding slideshow arrows on first and last slides
+ - giving the user an opportunity to choose a keyword for fetching images
 
 
