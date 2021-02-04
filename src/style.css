@@ -1,9 +1,11 @@
 /* Slideshow layout and elements */
 body {
+    padding: 0;
+    margin: 0;
     background-color: black;
 }
 .wrapper {
-    height: 100vh;
+    height: 99vh;
     display: flex;
     justify-content: center;
 }
@@ -26,7 +28,7 @@ body {
     animation:         fadeVisibility 1s; /* IE 10+, Fx 29+ */
 }
 #slideshow img {
-    max-height: 100vh;
+    max-height: 99vh;
     max-width: 1200px;
 }
 #slideshow .caption {
@@ -53,7 +55,7 @@ body {
 }
 .carousel-actions div {
     width: 15%;
-    height: 100vh;
+    height: 99vh;
     position: absolute;
     top: 0;
     display: flex;

@@ -98,11 +98,5 @@ function carousel() {
       slides[slidePosition].classList.add('carousel-item-visible')
    }
 }
-// Feature suggestions
-// 1. Automated slide transitions
-// 2. Add text to the slides +
-// 3. Show the user which slide they're on (dots under the slides)
-// 4. Hiding slideshow arrows on first and last slides
-// 5. Adding key listeners to sliding (left and right arrow keys) +
 
 // END Image Carousel
