@@ -6,6 +6,8 @@ This is HTML, CSS and JavaScript project.
 
 The Pixabay API key is hidden with the help of Node.js and Dotevn Webpack
 
+This is the start off as a simple app which will be gradually improved by adding more features and UX improvements.
+
 ## Challenges
 
  - create a carousel with JavaScript
