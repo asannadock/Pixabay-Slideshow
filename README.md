@@ -36,5 +36,5 @@ For the localhost 8001 port is being used - http://localhost:8001/.
  - giving the user an opportunity to choose a keyword for fetching images
 
 
-![](img/slideshow.webm)
-![](img/slideshow.png)
+![](img/slideshow.gif)
+![](img/slideshow-capture.png)
