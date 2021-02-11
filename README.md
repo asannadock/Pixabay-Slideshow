@@ -37,3 +37,4 @@ For the localhost 8001 port is being used - http://localhost:8001/.
 
 
 ![](img/slideshow.webm)
+![](img/slideshow.png)
