@@ -25,6 +25,7 @@ This is the start off as a simple app which will be gradually improved by adding
  - run `npm run serve` to open the slideshow on your localhost.
 For the localhost 8001 port is being used - http://localhost:8001/.
 
+![](img/slideshow.gif)
 
 ## Features to be added
 
@@ -34,7 +35,3 @@ For the localhost 8001 port is being used - http://localhost:8001/.
  - adding pause button
  - hiding slideshow arrows on first and last slides
  - giving the user an opportunity to choose a keyword for fetching images
-
-
-![](img/slideshow.gif)
-![](img/slideshow-capture.png)
