@@ -68,6 +68,9 @@ body {
     opacity: 1;
     transform: translateX(10px);
 }
+.carousel-actions div.previous:hover {
+    transform: translateX(-10px);
+}
 .carousel-actions div:hover,
 .carousel-actions button {
     cursor: pointer;
@@ -86,7 +89,7 @@ body {
     left: 0;
 }
 .carousel-actions .next {
-    right: 0;
+    right: 10px;
 }
 .carousel-actions button::before {
     content: '';
